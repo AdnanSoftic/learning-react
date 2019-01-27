@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'semantic-ui-css/semantic.min.css';
 import './index.css';
-import App from './App/Layouts/App';
-import * as serviceWorker from './serviceWorker';
+import App from './app/layouts/App';
+import * as serviceWorker from './serviceWorker'; 
 
 const rootElement = document.getElementById('root');
 
@@ -11,7 +12,7 @@ let render = () => {
 }
 
 if(module.hot) {
-    module.hot.accept('./App/Layouts/App', () => {
+    module.hot.accept('./app/layouts/App', () => {
         setTimeout(render)
     })
 }
